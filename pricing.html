@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: fit-content;
+            width: max-content;
+            border: 1px solid black;
+        }
+        .second{
+            display: none;
+        }
+        .first .btn:hover .second{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="first">
+            hello <button class="btn" onclick="show()">+</button><br>
+            <p class="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quod obcaecati alias, ipsa cumque molestiae, fuga tenetur, ipsam reiciendis veniam sint incidunt esse repellendus! In dolore qui est dolores facere deleniti? Fuga, ut eius.</p>
+        </p>
+            
+    </div>
+    <script>
+        show = document.querySelector(".btn");
+        para = document.querySelector(".second"); 
+        const show = ()=>{
+            para.style.display = "block";
+        }
+    </script>
+</body>
+</html>
